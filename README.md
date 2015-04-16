@@ -6,7 +6,7 @@ Maven's dependency resolution mechanism works on a per-project basis where just 
 
 This example uses the new Core Extension Mechanism in Maven 3.3.1 to enable the [Takari Smart Builder][2], the [Takari Local Repository][1], and the [Takari OkHttp Aether Connector][3] to give you more efficient parallel builds with the required local repository safeguards and efficient artifact downloading.
 
-To enable all these extensions just copy the `.mvn` directory into your project and give it a try! The `extensions.xml` file looks like the following:
+To enable all these extensions just copy the `.mvn` directory into your project and give it a try! The `.mvn/extensions.xml` file looks like the following:
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -29,6 +29,16 @@ To enable all these extensions just copy the `.mvn` directory into your project 
 </extensions>
 
 ```
+
+And the `.mvn/maven.config looks like the following:
+
+```
+--T 8
+--builder smart
+```
+
+Where you want to enable multiple threads and tell Maven to use the [Takari Smart Builder][2].
+
 
 [1]: https://github.com/takari/takari-local-repository
 [2]: https://github.com/takari/takari-smart-builder
