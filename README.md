@@ -14,7 +14,7 @@ To enable all these extensions just copy the `.mvn` directory into your project 
   <extension>
     <groupId>io.takari.maven</groupId>
     <artifactId>takari-smart-builder</artifactId>
-    <version>0.4.0</version>
+    <version>0.6.1</version>
   </extension>
   <extension>
     <groupId>io.takari.aether</groupId>
@@ -24,7 +24,7 @@ To enable all these extensions just copy the `.mvn` directory into your project 
   <extension>
     <groupId>io.takari.aether</groupId>
     <artifactId>aether-connector-okhttp</artifactId>
-    <version>1.0.0-alpha</version>
+    <version>1.0.1-alpha</version>
   </extension>  
 </extensions>
 
