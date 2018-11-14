@@ -19,13 +19,13 @@ To enable all these extensions just copy the `.mvn` directory into your project 
   <extension>
     <groupId>io.takari.aether</groupId>
     <artifactId>takari-concurrent-localrepo</artifactId>
-     <version>0.0.7</version>
+    <version>0.0.7</version>
   </extension>
   <extension>
     <groupId>io.takari.aether</groupId>
     <artifactId>aether-connector-okhttp</artifactId>
     <version>1.0.1-alpha</version>
-  </extension>  
+  </extension>
 </extensions>
 
 ```
